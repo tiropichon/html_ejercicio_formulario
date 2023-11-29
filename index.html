@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio formulario</title>
+    </head>
+    <body>
+        <form id="form1" name="form1" method="post" action="index.html">
+            <h1>Formulario de registro</h1>
+            <fieldset>
+                <legend>Datos para registro de usuario</legend>
+
+                <fieldset>
+                    <legend>Nombre y Apellidos:</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="apellido1">Primer apellido:</label>
+                    <input type="text" name="apellido1" id="apellido1">
+                    <label for="apellido2">Segundo apellido:</label>
+                    <input type="text" name="apellido2" id="apellido2">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dirección:</legend>
+                    <select id="via" name="via">
+                        <option value="calle">Calle</option>
+                        <option value="avenida">Avenida</option>
+                        <option value="camino">Camino</option>
+                        <option value="diseminado">Diseminado</option>
+                    </select>
+                    <label for="nameVia">Nombre de la vía:</label>
+                    <input type="text" name="nameVia" id="nameVia">
+                    <label for="numVia">Número:</label>
+                    <input type="text" name="numVia" id="numVia">
+                    <label for="codPostal">Código Postal:</label>
+                    <input type="text" name="codPostal" id="codPostal">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Estado Civil:</legend>
+                    <input type="radio" id="opc1" name="opc1" value="opc1">
+                    <label for="opc1">Soltero/a</label>
+                    <input type="radio" id="opc2" name="opc2" value="opc2">
+                    <label for="opc2">Casado/a</label>
+                    <input type="radio" id="opc3" name="opc3" value="opc3">
+                    <label for="opc3">Divorciado/a</label>
+                    <input type="radio" id="opc4" name="opc4" value="opc4">
+                    <label for="opc4">Viudo/a</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sexo:</legend>
+                    <input type="radio" id="sexo1" name="sexo1" value="sexo1">
+                    <label for="sexo1">Hombre</label>
+                    <input type="radio" id="sexo2" name="sexo2" value="sexo2">
+                    <label for="sexo2">Mujer</label>
+                    <input type="radio" id="sexo3" name="sexo3" value="sexo3">
+                    <label for="sexo3">NS/NC</label>
+                </fieldset>
+                <br>
+                <label for="e-mail">E-mail:</label>
+                <input type="email" name="e-mail" id="e-mail">
+            </fieldset>    
+            <br>
+            <input type="checkbox" id="verif" name="verif">
+            <label for="verif">Acepto que mis datos sean tratados según la Ley 
+                Orgánica 3/2018, de 5 de diciembre, de Protección de Datos 
+                Personales y garantía de los derechos digitales.</label>        
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </form>
+    </body>
+</html>
