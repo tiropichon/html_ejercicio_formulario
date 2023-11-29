@@ -34,6 +34,7 @@ h1 {
 fieldset{
     border-radius: .5em;
     margin: 0.5rem 0 0.5rem 0;
+    border-color: black;
 }
 
 .fieldInline {
@@ -105,4 +106,9 @@ fieldset{
     margin: 0.5rem 0 0.5rem 0;
     height: 2rem;
     border-radius: .5em;
+}
+
+/* footer */
+.footer {
+    text-align: center;
 }
