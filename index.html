@@ -11,18 +11,20 @@
 
             <fieldset>
                 <legend>Datos personales</legend>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre"  placeholder="Tu nombre" minlength="3" required>
-                <label for="apellido1">Primer apellido:</label>
-                <input type="text" name="apellido1" id="apellido1" placeholder="Primer Apellido" minlength="3" required>
-                <label for="apellido2">Segundo apellido:</label>
-                <input type="text" name="apellido2" id="apellido2" placeholder="Segundo Apellido" minlength="3" required>
-                <label for="edad">Edad:</label>
-                <input type="number" name="edad" id="edad" min="18" max="99" placeholder="Tu edad" required>
-                <label for="fNacimiento">Fecha de nacimiento:</label>
-                <input type="date" name="fNacimiento" id="fNacimiento" min="1950-01-01" max="2005-12-31" value="2023-11-30">
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Número de teléfono" required>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre"  placeholder="Tu nombre" minlength="3" required>
+                    <label for="apellido1">Primer apellido:</label>
+                    <input type="text" name="apellido1" id="apellido1" placeholder="Primer Apellido" minlength="3" required>
+                    <label for="apellido2">Segundo apellido:</label>
+                    <input type="text" name="apellido2" id="apellido2" placeholder="Segundo Apellido" minlength="3" required>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad" min="18" max="99" placeholder="Tu edad" required>
+                    <label for="fNacimiento">Fecha de nacimiento:</label>
+                    <input type="date" name="fNacimiento" id="fNacimiento" min="1950-01-01" max="2005-12-31" value="2023-11-30">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="999-999-999" required>
+                </p>
                 <fieldset>
                     <legend>Sexo:</legend>
                     <input type="radio" id="sexo1" name="sexo1" value="sexo1">
@@ -60,11 +62,13 @@
                 </fieldset>
             </fieldset>
             <p>
+            <fieldset>
+                <legend>Datos para inicio de sesión:</legend>
                 <label for="e-mail">E-mail:</label>
-                <input type="email" name="e-mail" id="e-mail"  placeholder="Tu e-mail" required>
+                <input type="email" name="e-mail" id="e-mail"  placeholder="Tu e-mail"  pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required>
                 <label for="passwd">Password:</label>:</label>
-                <input type="text" name="passwd" id="passwd"  placeholder="8 a 12 caracteres" minlength="8" maxlength="12" required>
-            </p>
+                <input type="password" name="passwd" id="passwd"  placeholder="8 a 12 caracteres" minlength="8" maxlength="12" required>
+            </fieldset>
             <p>                
                 <label for="comentarios">Comentarios:</label>
                 <textarea id="comentarios" name="comentarios" maxlength="200" style="width: 99%;"></textarea></p>
