@@ -7,18 +7,18 @@
     </head>
     <body>
         <form id="form1" name="form1" method="post" action="index.html">
-            <h1>Formulario de registro</h1>
+            <h1 style="text-align: center;">Formulario de registro</h1>
             <fieldset>
                 <legend>Datos para registro de usuario</legend>
 
                 <fieldset>
                     <legend>Nombre y Apellidos:</legend>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre">
+                    <input type="text" name="nombre" id="nombre"  placeholder="Tu nombre" required>
                     <label for="apellido1">Primer apellido:</label>
-                    <input type="text" name="apellido1" id="apellido1">
+                    <input type="text" name="apellido1" id="apellido1" placeholder="Primer Apellido" required>
                     <label for="apellido2">Segundo apellido:</label>
-                    <input type="text" name="apellido2" id="apellido2">
+                    <input type="text" name="apellido2" id="apellido2" placeholder="Segundo Apellido" required>
                 </fieldset>
 
                 <fieldset>
@@ -30,11 +30,11 @@
                         <option value="diseminado">Diseminado</option>
                     </select>
                     <label for="nameVia">Nombre de la vía:</label>
-                    <input type="text" name="nameVia" id="nameVia">
+                    <input type="text" name="nameVia" id="nameVia"  placeholder="Nombre de vía" required>
                     <label for="numVia">Número:</label>
-                    <input type="text" name="numVia" id="numVia">
+                    <input type="text" name="numVia" id="numVia"  placeholder="Número de vía" required>
                     <label for="codPostal">Código Postal:</label>
-                    <input type="text" name="codPostal" id="codPostal">
+                    <input type="text" name="codPostal" id="codPostal"  placeholder="Cod. Postal" required>
                 </fieldset>
 
                 <fieldset>
@@ -60,10 +60,13 @@
                 </fieldset>
                 <br>
                 <label for="e-mail">E-mail:</label>
-                <input type="email" name="e-mail" id="e-mail">
+                <input type="email" name="e-mail" id="e-mail"  placeholder="Tu e-mail" required>
+                <br>
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
             </fieldset>    
             <br>
-            <input type="checkbox" id="verif" name="verif">
+            <input type="checkbox" id="verif" name="verif" required>
             <label for="verif">Acepto que mis datos sean tratados según la Ley 
                 Orgánica 3/2018, de 5 de diciembre, de Protección de Datos 
                 Personales y garantía de los derechos digitales.</label>        
