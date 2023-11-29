@@ -22,13 +22,13 @@
                 <label class="label" for="edad">Edad:</label>
                 <input class="input" type="number" name="edad" id="edad" min="18" max="99" placeholder="Tu edad" required>
                 <label class="label" for="fNacimiento">Fecha de nacimiento:</label>
-                <input class="input" type="date" name="fNacimiento" id="fNacimiento" min="1950-01-01" max="2005-12-31" value="2023-11-30">
+                <input class="fecha" type="date" name="fNacimiento" id="fNacimiento" min="1950-01-01" max="2005-12-31" value="2023-11-30">
                 <label class="label" for="telefono">Teléfono:</label>
                 <input class="input" type="tel" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="999-999-999" required>
 
                 <fieldset class="fieldInline">
                     <legend>Sexo:</legend>
-                    <input type="radio" id="sexo1" name="sexo1" value="sexo1">
+                    <input class="radios" type="radio" id="sexo1" name="sexo1" value="sexo1">
                     <label for="sexo1">Hombre</label>
                     <input type="radio" id="sexo2" name="sexo2" value="sexo2">
                     <label for="sexo2">Mujer</label>
@@ -49,7 +49,7 @@
                 <fieldset class="fieldInline">
                     <legend>Dirección:</legend>
                     <label class="label" for="via">Tipo de la vía:</label>
-                    <select class="input" id="via" name="via">
+                    <select id="via" name="via">
                         <option value="calle">Calle</option>
                         <option value="avenida">Avenida</option>
                         <option value="camino">Camino</option>
@@ -82,8 +82,8 @@
                 Personales y garantía de los derechos digitales.</label>
             </div>
             <div>
-                <input type="submit" value="Enviar" class="boton">
                 <input type="reset" value="Restablecer" class="boton">
+                <input type="submit" value="Enviar" class="boton">
             </div>      
         </form>
     </body>
