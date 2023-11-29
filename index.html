@@ -54,7 +54,7 @@
                         <option value="diseminado">Diseminado</option>
                     </select>
                     <label for="nameVia">Nombre de la vía:</label>
-                    <input type="text" name="nameVia" id="nameVia"  placeholder="Nombre de vía">
+                    <input type="text" name="nameVia" id="nameVia" placeholder="Nombre de vía">
                     <label for="numVia">Número:</label>
                     <input type="number" name="numVia" id="numVia" min="1" placeholder="Número de vía">
                     <label for="codPostal">Código Postal:</label>
@@ -65,9 +65,10 @@
             <fieldset>
                 <legend>Datos para inicio de sesión:</legend>
                 <label for="e-mail">E-mail:</label>
-                <input type="email" name="e-mail" id="e-mail"  placeholder="Tu e-mail"  pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required>
+                <input type="email" name="e-mail" id="e-mail"  placeholder="Tu e-mail" pattern="^(?=[A-Z0-9][A-Z0-9@._%+-]{5,253}+$)[A-Z0-9._%+-]{1,64}+@
+                (?:(?=[A-Z0-9-]{1,63}+\.)[A-Z0-9]++(?:-[A-Z0-9]++)*+\.){1,8}+[A-Z]{2,63}+$" required>
                 <label for="passwd">Password:</label>:</label>
-                <input type="password" name="passwd" id="passwd"  placeholder="8 a 12 caracteres" minlength="8" maxlength="12" required>
+                <input type="password" name="passwd" id="passwd" placeholder="8 a 12 caracteres" minlength="8" maxlength="12" required>
             </fieldset>
             <p>                
                 <label for="comentarios">Comentarios:</label>
@@ -78,7 +79,7 @@
                 Orgánica 3/2018, de 5 de diciembre, de Protección de Datos 
                 Personales y garantía de los derechos digitales.</label>
             </p>        
-            <p>
+            <p style="width:100%; text-align: center;">
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Restablecer">
             </p>
